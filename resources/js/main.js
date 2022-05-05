@@ -31,7 +31,7 @@ function initialize() {
 
     if (location.hash) {
         let urlParams = location.hash.split('#').join('');
-        urlParams = urlParams.split('/');
+        urlParams = urlParams.split(',');
 
         mapSettings.center.lat = urlParams[0];
         mapSettings.center.lng = urlParams[1];
